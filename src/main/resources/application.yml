@@ -1,0 +1,13 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/test1
+    username: root
+    password: mypass
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
