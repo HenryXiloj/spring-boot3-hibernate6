@@ -33,7 +33,7 @@ public class UserController {
     }
 
     @GetMapping("/sum/{a}/{b}")
-    public Integer getEmployees(@PathVariable int a, @PathVariable int b) {
+    public Integer getSum(@PathVariable int a, @PathVariable int b) {
         return userService.getSum(a, b);
     }
 
