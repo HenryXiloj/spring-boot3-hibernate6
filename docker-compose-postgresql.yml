@@ -1,0 +1,11 @@
+version: '3'
+services:
+  postgres:
+    image: postgres:14.1
+    container_name: postgre_test
+    environment:
+      POSTGRES_USER: postgre_test
+      POSTGRES_PASSWORD: postgre_test
+      POSTGRES_DB: postgre_test
+    ports:
+      - "5432:5432"

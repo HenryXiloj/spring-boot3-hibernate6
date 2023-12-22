@@ -4,10 +4,12 @@ server:
     context-path: /
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3306/test1
-    username: root
-    password: mypass
-    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:postgresql:postgre_test
+    username: postgre_test
+    password: postgre_test
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: always
   jpa:
-    database-platform: org.hibernate.dialect.MySQL5Dialect
     show-sql: true
+    hibernate:
+      ddl-auto: create-drop
